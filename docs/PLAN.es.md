@@ -1,6 +1,6 @@
 # YouTube Focus · Plan para v0.1.0
 
-**Estado:** especificación inicial. No se ha comenzado la implementación.
+**Estado:** iteración 001 verificada manualmente en Zen. Iteración 002 implementada; pendiente de verificación manual en Zen/Firefox. El filtrado todavía no está disponible.
 
 ## Por qué existe
 
@@ -8,7 +8,7 @@ Quiero usar YouTube sin que su sistema de recomendaciones decida continuamente q
 
 ## Qué entra en esta primera versión
 
-**Tecnología:** extensión para Chrome con Manifest V3, JavaScript, HTML y CSS nativos. Sin backend, cuentas, servicios externos ni modelo de IA. Pediremos solo los permisos que realmente usemos.
+**Tecnología:** extensión con Manifest V3, JavaScript, HTML y CSS nativos. Zen/Firefox es el navegador principal de prueba; mantenemos compatibilidad con Chrome. Sin backend, cuentas, servicios externos ni modelo de IA. Pediremos solo los permisos que realmente usemos.
 
 **Superficies:** página de inicio, barra de recomendaciones durante la reproducción y accesos/tarjetas de Shorts. Quedan fuera los resultados de búsqueda y el bloqueo de una reproducción abierta directamente.
 
@@ -26,7 +26,7 @@ Cuando una autorización manual específica y un bloqueo genérico entren en con
 
 ## Iteraciones
 
-- [ ] **001. Esqueleto:** `manifest.json`, popup mínimo e instalación sin errores.
+- [x] **001. Esqueleto:** `manifest.json`, popup mínimo e instalación sin errores. Verificada en Zen.
 - [ ] **002. Detección:** identificar tarjetas y zonas objetivo en YouTube.
 - [ ] **003. Shorts:** ocultar accesos y tarjetas de Shorts.
 - [ ] **004. Reglas:** filtrar por palabras, canales y videos.
@@ -38,9 +38,11 @@ Cuando una autorización manual específica y un bloqueo genérico entren en con
 
 Cada iteración se probará antes de la siguiente. Los nombres no implican que haga falta un commit exactamente por línea.
 
+La iteración 002 registra tarjetas de Inicio y recomendaciones en la consola, sin ocultarlas. Lee título, ID y enlace del video, y los datos de canal disponibles. Detecta tarjetas añadidas o actualizadas y evita repetir registros idénticos durante una misma página. La prueba manual se describe en el README; la casilla seguirá pendiente hasta comprobarla en Zen/Firefox.
+
 ## Cuándo diremos que v0.1.0 está lista
 
-1. Chrome permite cargar la extensión descomprimida sin errores de manifiesto.
+1. Zen/Firefox permite cargar el complemento temporal y Chrome la extensión descomprimida sin errores de manifiesto.
 2. Al navegar por Inicio o abrir un video, el filtro identifica nuevos elementos y oculta los que coinciden con reglas activas.
 3. Shorts deja de aparecer en las superficies previstas.
 4. Las reglas y el estado del interruptor sobreviven al reiniciar Chrome.

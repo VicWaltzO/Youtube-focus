@@ -1,6 +1,6 @@
 # YouTube Focus · v0.1.0 plan
 
-**Status:** initial specification. Implementation has not started.
+**Status:** iteration 001 manually verified in Zen. Iteration 002 implemented; manual verification in Zen/Firefox is pending. Filtering is not available yet.
 
 ## Why I'm making this
 
@@ -8,7 +8,7 @@ I want to use YouTube without handing over every decision about what deserves my
 
 ## What this version covers
 
-**Tech:** a Chrome extension built with Manifest V3 and plain JavaScript, HTML and CSS. No backend, accounts, outside services or AI model. Ask for permissions only when a feature actually needs them.
+**Tech:** an extension built with Manifest V3 and plain JavaScript, HTML and CSS. Zen/Firefox is the primary test browser; Chrome compatibility is maintained. No backend, accounts, outside services or AI model. Ask for permissions only when a feature actually needs them.
 
 **Surfaces:** the home feed, sidebar recommendations during playback, and Shorts cards or entry points. Search results and directly opened video playback are out of scope.
 
@@ -26,7 +26,7 @@ A specific manual allow rule should win over a broad block rule. We'll test and 
 
 ## Development steps
 
-- [ ] **001. Scaffold:** valid `manifest.json`, minimal popup and a clean local install.
+- [x] **001. Scaffold:** valid `manifest.json`, minimal popup and a clean local install. Verified in Zen.
 - [ ] **002. Detection:** identify video cards and target areas.
 - [ ] **003. Shorts:** hide Shorts cards and entry points.
 - [ ] **004. Rules:** filter by keywords, channels and video IDs.
@@ -38,9 +38,11 @@ A specific manual allow rule should win over a broad block rule. We'll test and 
 
 Test each step before moving on. This list isn't a promise of exactly one commit per step.
 
+Iteration 002 logs Home and recommendation cards to the console without hiding them. It reads the video's title, ID and link, plus any available channel details. It detects added or updated cards and avoids repeating identical entries on the same page. The README describes the manual test; the checkbox remains pending until verification in Zen/Firefox.
+
 ## Acceptance criteria for v0.1.0
 
-1. Chrome loads the unpacked extension without manifest errors.
+1. Zen/Firefox loads the temporary add-on and Chrome loads the unpacked extension without manifest errors.
 2. The filter handles newly loaded items on Home and video pages.
 3. Shorts entry points disappear from the agreed surfaces.
 4. Rules and switch state persist across browser restarts.
