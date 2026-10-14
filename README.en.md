@@ -4,7 +4,7 @@
 
 [**Versión en español**](README.md) · [Edit the map on tldraw](https://www.tldraw.com/f/fRVXQaUH8dlvHUsC28i1D)
 
-> **Status:** v0.1.0 is being planned. There is no working extension to install yet.
+> **Status:** iteration 001 of v0.1.0. The extension scaffold is ready for local installation; manual verification in Chrome is pending. Filtering is not available yet.
 
 YouTube is an incredible place to learn. It is also remarkably good at pulling you away from what you came to watch. **YouTube Focus** started with a simple idea: I want more say over what appears on my screen, rather than leaving every recommendation up to the platform.
 
@@ -24,6 +24,18 @@ This isn't about banning entertainment. It's about choosing when I want it and w
 | Data | Settings and metrics stored locally in the browser. |
 
 Search-result filtering and blocking directly opened videos are **out of scope** for now. So are passwords, strict modes, timers, an advanced dashboard and AI.
+
+## Local installation in Chrome
+
+1. Download and extract the repository, or clone it to your computer.
+2. Open `chrome://extensions` in Chrome.
+3. Enable **Developer mode**.
+4. Click **Load unpacked** and select the `extension/` folder, not the repository root.
+5. Open the toolbar's extensions menu and select **YouTube Focus**. You can pin it to access the popup directly.
+
+The popup currently uses Spanish and should display **YouTube Focus**, **Versión 0.1.0**, **Prototipo inicial** (initial prototype) and **El filtrado todavía no está disponible.** (filtering is not available yet). This scaffold requests no permissions and does not modify YouTube.
+
+Check that Chrome loads the extension without errors and that the popup is fully visible, without clipped text or scrollbars. After editing the files, click the extension's reload button in `chrome://extensions` and reopen the popup.
 
 ## How I'm building it
 

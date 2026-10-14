@@ -4,7 +4,7 @@
 
 [**English version**](README.en.md) · [Editar el mapa en tldraw](https://www.tldraw.com/f/8TxYBVnt8KjFjoVAIynuH)
 
-> **Estado:** planificación de v0.1.0. Todavía no hay una extensión funcional para instalar.
+> **Estado:** iteración 001 de v0.1.0. Base de la extensión preparada para instalar localmente; pendiente de verificación manual en Chrome. El filtrado todavía no está disponible.
 
 YouTube puede ser una biblioteca increíble para aprender. El problema es que, cuando entras a buscar algo concreto, las recomendaciones compiten por tu atención. **YouTube Focus** nace de esa molestia: quiero poder decidir qué contenido aparece, sin depender de lo que una plataforma considere interesante para mí.
 
@@ -24,6 +24,18 @@ La **v0.1.0** será un prototipo técnico, no un producto terminado. Empezaremos
 | Datos | Configuración y métricas guardadas localmente. |
 
 Por ahora **no** filtraremos resultados de búsqueda ni bloquearemos la reproducción de enlaces abiertos directamente. Tampoco habrá contraseñas, modos estrictos, temporizadores, panel avanzado ni IA en esta etapa.
+
+## Instalación local en Chrome
+
+1. Descarga y descomprime el repositorio, o clónalo en tu equipo.
+2. Abre `chrome://extensions` en Chrome.
+3. Activa **Modo de desarrollador**.
+4. Pulsa **Cargar descomprimida** y selecciona la carpeta `extension/`, no la raíz del repositorio.
+5. Abre el menú de extensiones de la barra de herramientas y selecciona **YouTube Focus**. Puedes fijarla para acceder al popup directamente.
+
+El popup debe mostrar **YouTube Focus**, **Versión 0.1.0**, **Prototipo inicial** y **El filtrado todavía no está disponible.** Esta base no solicita permisos ni modifica YouTube.
+
+Comprueba que Chrome carga la extensión sin errores y que el popup se ve completo, sin texto cortado ni barras de desplazamiento. Después de modificar los archivos, pulsa el botón de recarga de la extensión en `chrome://extensions` y vuelve a abrir el popup.
 
 ## Cómo lo construiremos
 
