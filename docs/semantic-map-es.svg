@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+<title id="title">YouTube Focus — mapa semántico</title>
+<desc id="desc">Alcance planificado para v0.1 y funciones futuras</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0a142b"/><stop offset="1" stop-color="#09101e"/></linearGradient>
+ <linearGradient id="core" x2="1" y2="1"><stop stop-color="#172a53"/><stop offset="1" stop-color="#18345c"/></linearGradient>
+ <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7c92b2"/></marker>
+ <style><![CDATA[
+  .kicker{font:600 18px system-ui,'Segoe UI',sans-serif;fill:#7cb2ff;letter-spacing:3px}
+  .title{font:700 42px system-ui,'Segoe UI',sans-serif;fill:#f1f5fc}
+  .sub{font:400 22px system-ui,'Segoe UI',sans-serif;fill:#b0bfd5}
+  .heading{font:700 22px system-ui,'Segoe UI',sans-serif;fill:#eaf1fa}
+  .body{font:400 19px system-ui,'Segoe UI',sans-serif;fill:#bccce0}
+  .small{font:500 17px system-ui,'Segoe UI',sans-serif;fill:#9db0cc}
+  .badge{font:700 17px system-ui,'Segoe UI',sans-serif;fill:#c4e9d3;letter-spacing:1px}
+  .future{font:600 20px system-ui,'Segoe UI',sans-serif;fill:#d9c9ff}
+ ]]></style>
+ </defs>
+ <rect width="1600" height="980" fill="url(#bg)"/>
+ <rect x="0" y="0" width="1600" height="8" fill="#4e9bff"/>
+ <circle cx="1370" cy="170" r="245" fill="#19305b" opacity=".18"/>
+ <circle cx="200" cy="920" r="350" fill="#143a35" opacity=".17"/>
+ <rect x="60" y="65" width="150" height="36" rx="18" fill="#123f35" stroke="#357e69"/>
+
+<text x="135" y="89" class="badge" text-anchor="middle"><tspan x="135" dy="0">PLAN DE v0.1</tspan></text>
+<text x="800" y="150" class="title" text-anchor="middle"><tspan x="800" dy="0">YOUTUBE FOCUS</tspan></text>
+<text x="800" y="192" class="sub" text-anchor="middle"><tspan x="800" dy="0">Menos distracciones. Más control sobre lo que ves.</tspan></text>
+<rect x="475" y="227" width="650" height="140" rx="25" fill="url(#core)" stroke="#4b97f7" stroke-width="3"/>
+<text x="800" y="285" class="heading" text-anchor="middle"><tspan x="800" dy="0">Extensión de Chrome · Manifest V3</tspan></text>
+<text x="800" y="327" class="sub" text-anchor="middle"><tspan x="800" dy="0">Prototipo técnico · alcance previsto</tspan></text>
+<path d="M 800 367 V 402 M 200 402 H 1400 M 200 402 V 442 M 600 402 V 442 M 1000 402 V 442 M 1400 402 V 442" fill="none" stroke="#6c819f" stroke-width="3" stroke-linecap="round"/>
+<rect x="65" y="448" width="270" height="282" rx="21" fill="#131f35" stroke="#51ad8f" stroke-width="2"/>
+<rect x="85" y="473" width="6" height="35" rx="3" fill="#51ad8f"/>
+<text x="200.0" y="502" class="heading" text-anchor="middle"><tspan x="200.0" dy="0">SUPERFICIES</tspan></text>
+<text x="200.0" y="567" class="body" text-anchor="middle"><tspan x="200.0" dy="0">Página de inicio</tspan></text>
+<text x="200.0" y="616" class="body" text-anchor="middle"><tspan x="200.0" dy="0">Videos sugeridos</tspan></text>
+<text x="200.0" y="665" class="body" text-anchor="middle"><tspan x="200.0" dy="0">Accesos a Shorts</tspan></text>
+<rect x="465" y="448" width="270" height="282" rx="21" fill="#131f35" stroke="#5c99ff" stroke-width="2"/>
+<rect x="485" y="473" width="6" height="35" rx="3" fill="#5c99ff"/>
+<text x="600.0" y="502" class="heading" text-anchor="middle"><tspan x="600.0" dy="0">FILTROS</tspan></text>
+<text x="600.0" y="567" class="body" text-anchor="middle"><tspan x="600.0" dy="0">Listas blancas y negras</tspan></text>
+<text x="600.0" y="616" class="body" text-anchor="middle"><tspan x="600.0" dy="0">Palabras, canales y videos</tspan></text>
+<text x="600.0" y="665" class="body" text-anchor="middle"><tspan x="600.0" dy="0">Excepciones manuales</tspan></text>
+<rect x="865" y="448" width="270" height="282" rx="21" fill="#131f35" stroke="#e5ae59" stroke-width="2"/>
+<rect x="885" y="473" width="6" height="35" rx="3" fill="#e5ae59"/>
+<text x="1000.0" y="502" class="heading" text-anchor="middle"><tspan x="1000.0" dy="0">CONTROL</tspan></text>
+<text x="1000.0" y="567" class="body" text-anchor="middle"><tspan x="1000.0" dy="0">Interruptor ON / OFF</tspan></text>
+<text x="1000.0" y="616" class="body" text-anchor="middle"><tspan x="1000.0" dy="0">Configuración local</tspan></text>
+<text x="1000.0" y="665" class="body" text-anchor="middle"><tspan x="1000.0" dy="0">Ocultar, no reemplazar</tspan></text>
+<rect x="1265" y="448" width="270" height="282" rx="21" fill="#131f35" stroke="#b68cff" stroke-width="2"/>
+<rect x="1285" y="473" width="6" height="35" rx="3" fill="#b68cff"/>
+<text x="1400.0" y="502" class="heading" text-anchor="middle"><tspan x="1400.0" dy="0">SEGUIMIENTO</tspan></text>
+<text x="1400.0" y="567" class="body" text-anchor="middle"><tspan x="1400.0" dy="0">Tiempo de reproducción</tspan></text>
+<text x="1400.0" y="616" class="body" text-anchor="middle"><tspan x="1400.0" dy="0">Elementos ocultados</tspan></text>
+<text x="1400.0" y="665" class="body" text-anchor="middle"><tspan x="1400.0" dy="0">Datos en el navegador</tspan></text>
+<path d="M 800 731 V 785" stroke="#7c92b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="225" y="805" width="1150" height="95" rx="18" fill="#221a3b" stroke="#7f64bd" stroke-width="2" stroke-dasharray="9 7"/>
+<text x="800" y="842" class="future" text-anchor="middle"><tspan x="800" dy="0">DESPUÉS DE v0.1  ·  MODOS  ·  TEMPORIZADOR  ·  CONTRASEÑA  ·  IA LIGERA</tspan></text>
+<text x="800" y="874" class="small" text-anchor="middle"><tspan x="800" dy="0">Estas funciones están previstas, no implementadas.</tspan></text>
+<text x="800" y="944" class="small" text-anchor="middle"><tspan x="800" dy="0">Mapa editable en tldraw · Consulta el plan del repositorio</tspan></text>
+</svg>
